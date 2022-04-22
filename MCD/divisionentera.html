@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División entera por Euclides</title>
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Meow+Script&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Inicio</a>
+            <a href="../Circulos/calculoCircularesV2.html">Calculo Circulares</a>
+            <a href="../Nota/notaFinal-V2.html">Notas</a>
+            <a href="../MCD/divisionentera.html">Div. Entera</a> 
+            <a href="../Texto/texto-estilo-v2.html">Cambio de texto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>    
+
+<div id="MCD">
+
+    <h1>Cálculo de la división entera por el algoritmo de Euclides</h1>
+    <form action="">
+        <label for="divi">Dividendo:</label>
+        <input type="number" min="0" id="divi" placeholder="introduce un entero" required> *<br><br>
+        <label for="disor">Divisor:</label>
+        <input type="number" min="0" id="disor" placeholder="introduce otro entero" required> *<br><br>
+        
+    </form>
+    <button onclick="diviEntera()">Calcula</button>
+
+    <p id="solucion"></p>
+
+    <script src="./EuclidesDivision.js"></script>
+</div>
+
+</body>
+</body>
+</html>

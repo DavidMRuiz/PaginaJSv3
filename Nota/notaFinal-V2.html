@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota final de asignatura</title>
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Meow+Script&family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Inicio</a>
+            <a href="../Circulos/calculoCircularesV2.html">Calculo Circulares</a>
+            <a href="./notaFinal-V2.html">Notas</a>
+            <a href="../MCD/divisionentera.html">Div. Entera</a> 
+            <a href="../Texto/texto-estilo-v2.html">Cambio de texto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div id="NT">
+
+    <h1>Cálculo de la nota final de una asignatura</h1>
+    <!-- entrada de datos por formulario -->
+    <form action="">
+        <label for="worPpress">Nota Wordpress:</label><br>
+        <input type="text" id="wordPress"><br>
+        <label for="js">Nota JS:</label><br>
+        <input type="text" id="js"><br>
+        <!-- añadimos la posibilidad de hacer uno o dos 
+             trabajos para subir nota-->
+        <input type="checkbox" name="trabajowp" id="trabajowp">
+        <label for="trabajowp">Trabajo extra de Wordpress</label><br>
+        <input type="checkbox" name="trabajojs" id="trabajojs">
+        <label for="trabajojs">Trabajo extra de JavaScript</label><br>
+    </form>
+    <!-- activación del javascript -->
+    <button onclick="calculoNota()">Calcula!</button>
+    <!-- aquí saldrá el resultado-->
+    <p id="resultado"></p>
+    <p id="indicacion"></p>
+
+        <script src="./Notas.js">
+        </script>
+
+    </div>
+</body>
+</html>
